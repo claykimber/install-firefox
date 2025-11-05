@@ -2,7 +2,7 @@
 
 # create /etc/apt/keyrings
 echo "Creating the required /etc/apt/keyrings directory..."
-if [[ ! -d /etc/apt/changes ]]; then
+if [[ ! -d /etc/apt/keyrings ]]; then
     sudo install -d -m 0755 /etc/apt/keyrings
 else
     echo "...skipping...already exists"
