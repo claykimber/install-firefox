@@ -28,11 +28,11 @@ fi
 echo "Creating the Mozilla APT repository source file..."
 if [[ ! -f "/etc/apt/sources.list.d/mozilla.sources" ]]; then
     cat <<EOF | sudo tee /etc/apt/sources.list.d/mozilla.sources
-    Types: deb
-    URIs: https://packages.mozilla.org/apt
-    Suites: mozilla
-    Components: main
-    Signed-By: /etc/apt/keyrings/packages.mozilla.org.asc
+Types: deb
+URIs: https://packages.mozilla.org/apt
+Suites: mozilla
+Components: main
+Signed-By: /etc/apt/keyrings/packages.mozilla.org.asc
 EOF
 else
     echo "...skipping...already exists"
